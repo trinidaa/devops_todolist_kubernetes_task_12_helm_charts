@@ -1,4 +1,4 @@
-apVersion: v2
+apiVersion: v2
 name: helm-sql
 description: A Helm chart for mysql
 type: application
