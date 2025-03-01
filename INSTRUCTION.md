@@ -1,4 +1,4 @@
 ## Create infrastructure:
 ```bash
-./ikebana.sh
+./bootstrap.sh
 ```
