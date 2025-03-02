@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: {{ .Chart.Name }}-mysql
+  name: mysql
   namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
       app: {{ .Values.labels.app }}
   replicas: {{ .Values.StatefulSet.replicas }}
-  serviceName: {{ .Chart.Name }}-mysql
+  serviceName: mysql
   template:
     metadata:
       labels:
