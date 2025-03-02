@@ -13,8 +13,8 @@ for NODE in "${NODES[@]}"; do
     fi
 done
 
-helm dependency build ./helm-chart/todoapp/
-helm install todoapp ./helm-chart/todoapp
+helm dependency build .infrastructure/helm-chart/todoapp/
+helm install todoapp .infrastructure/helm-chart/todoapp
 #kubectl get pods -A -o wide
 #helm list
 #helm dependency list ./helm-chart/todoapp/
